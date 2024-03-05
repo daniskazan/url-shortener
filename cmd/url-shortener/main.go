@@ -6,6 +6,7 @@ import (
 
 func main() {
 	app := application.NewApplication()
+	app.ConfigureRouting()
 	err := app.Start()
 	if err != nil {
 		panic("fail start app")
